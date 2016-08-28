@@ -1,6 +1,4 @@
-# ReactJS Talk. Part 2 redux and react-router
-
-In this talk we see the react-router and redux libraries.
+# Just testing GFW with React-redux
 
 ## Installation and execution
 
