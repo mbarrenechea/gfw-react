@@ -13,7 +13,7 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 
 import * as reducers from './reducers';
 
-import {App, Home, Detail} from './containers';
+import {App, Map} from './containers';
 // import Home from './containers/home.jsx';
 
 
@@ -42,9 +42,7 @@ render(
     <div>
       <Router history={history}>
         <Route path="/" component={App}>
-          <IndexRoute component={Home}/>
-          <Route path="list" component={Home}/>
-          <Route path="detail/:id" component={Detail}/>
+          <IndexRoute component={Map}/>
         </Route>
       </Router>
       <DevTools />

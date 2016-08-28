@@ -1,2 +1,2 @@
-export repositories from './repositories';
+export map from './map';
 export loading from './loading';
