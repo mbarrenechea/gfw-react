@@ -1,10 +1,11 @@
 'use strict';
 import { connect } from 'react-redux';
-import Map from '../components/mapView';
+import MapView from '../components/mapView';
 
 
 const mapStateToProps = (state) => {
 	return {
+		routing: state.routing
 		// repositories : state.repositories.list
 	};
 };
@@ -18,4 +19,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
 	mapStateToProps,
 	mapDispatchToProps
-)(Map);
+)(MapView);

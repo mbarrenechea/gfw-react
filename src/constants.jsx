@@ -1,3 +1,2 @@
-export const INIT = 'init';
+export const MAP = 'map';
 export const LOADING = 'loading';
-export const DETAIL = 'detail';

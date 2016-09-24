@@ -1,7 +1,7 @@
 'use strict';
 import { connect } from 'react-redux';
 
-import App from '../components/appView';
+import AppView from '../components/appView';
 
 
 const mapStateToProps = (state) => {
@@ -20,4 +20,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
 	mapStateToProps,
 	mapDispatchToProps
-)(App);
+)(AppView);

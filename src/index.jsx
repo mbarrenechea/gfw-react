@@ -1,3 +1,4 @@
+import './styles/main.scss';
 import { createDevTools } from 'redux-devtools'
 import LogMonitor from 'redux-devtools-log-monitor'
 import DockMonitor from 'redux-devtools-dock-monitor'
@@ -13,8 +14,7 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 
 import * as reducers from './reducers';
 
-import {App, Map} from './containers';
-// import Home from './containers/home.jsx';
+import {AppView, MapView} from './containers';
 
 
 const reducer = combineReducers({
@@ -41,8 +41,8 @@ render(
   <Provider store={store}>
     <div>
       <Router history={history}>
-        <Route path="/" component={App}>
-          <IndexRoute component={Map}/>
+        <Route path="/" component={AppView}>
+          <IndexRoute component={MapView}/>
         </Route>
       </Router>
       <DevTools />

@@ -3,12 +3,9 @@
 import React from 'react';
 import {Link, browserHistory} from 'react-router';
 
-class App extends React.Component {
+class AppView extends React.Component {
   render() {
     return <div>
-      <h1>
-        GFW REACT
-      </h1>
       {this.props.loading &&
         <span>Loading</span>
       }
@@ -19,4 +16,4 @@ class App extends React.Component {
   };
 };
 
-export default App;
+export default AppView;

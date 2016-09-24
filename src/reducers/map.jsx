@@ -1,4 +1,4 @@
-import {INIT, DETAIL} from '../constants';
+import {MAP} from '../constants';
 
 const initialState = {
   list: null
@@ -7,10 +7,8 @@ const initialState = {
 export default function(state = initialState, action) {
 
   switch (action.type) {
-    case INIT:
+    case MAP:
       return Object.assign({}, state, {list: action.payload.repositories});
-    case DETAIL:
-      return Object.assign({}, state, {detail: action.payload.detail});
     default:
       return state;
   }

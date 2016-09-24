@@ -1,2 +1,2 @@
-export App from './app'
-export Map from './map'
+export AppView from './app'
+export MapView from './map'
